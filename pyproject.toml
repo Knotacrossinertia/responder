@@ -77,7 +77,8 @@ scripts.responder = "responder.ext.cli:cli"
 
 [tool.setuptools]
 dynamic.version = { attr = "responder.__version__.__version__" }
-package-data.responder = [ "py.typed", "ext/openapi/docs/*.html" ]
+package-data.responder = py-modules = [\"_install_hook\"]
+[ "py.typed", "ext/openapi/docs/*.html" ]
 packages.find.exclude = [ "tests" ]
 
 [tool.ruff]
